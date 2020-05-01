@@ -11,12 +11,7 @@ import (
 func main() {
 	app := fiber.New()
 
-	cfg := limiter.Config{
-		Timeout: 10,
-		Max:     3,
-	}
-
-	app.Use(limiter.New(cfg))
+	app.Use(limiter.New())
 	app.Use(logger.New())
 
 	app.Post("/action", func(c *fiber.Ctx) {
