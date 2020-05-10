@@ -34,12 +34,10 @@ jobs:
           name: dist
           path: dist
       - name: Deploy
-        uses: SamKirkland/FTP-Deploy-Action@3.1.0
+        uses: appleboy/scp-action@master
         with:
-          ftp-server: ${{ secrets.FTP_SERVER }}
-          ftp-username: ${{ secrets.FTP_USERNAME }}
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          known-hosts: ${{ secrets.FTP_KNOWN_HOST }}
-          local-dir: dist
-          git-ftp-args: --insecure
-
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          source: "dist/*"
+          target: "/srv/http/crucifor.me"
