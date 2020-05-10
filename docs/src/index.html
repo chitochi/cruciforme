@@ -24,23 +24,75 @@
 
 		<link rel="stylesheet" href="index.css" type="text/css">
 	</head>
-	<body class="min-h-screen bg-indigo-900 flex justify-center items-center">
-		<div class="text-white w-full max-w-lg">
+	<body class="min-h-screen bg-indigo-900 flex justify-center items-center px-1 pt-10">
+		<div class="text-white w-full max-w-xl">
 			<h1 class="text-5xl tracking-wide text-center mb-2">Cruci<span class="font-semibold">form</span>e</h1>
 			<h2 class="text-2xl font-light text-center mb-10">A form endpoint for static websites</h2>
 
-			<pre class="w-full"><code class="html rounded">&lt;form
-  action="https://crucifor.me"
-  method="post"
-  enctype="multipart/form-data"&gt;
+			<pre class="w-full mb-10"><code class="html rounded">&lt;form
+	action="https://crucifor.me"
+	method="post"
+	enctype="multipart/form-data"&gt;
 
-  &lt;input name="fullName" type="text"&gt;
+	&lt;input name="lastName" type="text"&gt;
+	&lt;input name="firstName" type="text"&gt;
 
-  &lt;input
-    name="cruciforme-mail"
-    value="your@awesome.mail"
-    type="hidden"&gt;
+	&lt;input
+		name="cruciforme-mail"
+		value="your@awesome.mail"
+		type="hidden"&gt;
 &lt;/form&gt;</code></pre>
+		
+			<h2 class="text-3xl text-center font-semibold mb-2">It's easy !</h2>
+
+			<h3 class="text-2xl text-center mb-4">Take a form, for example:</h3>
+			<pre class="w-full mb-8"><code class="html rounded">&lt;form&gt;
+	&lt;input name="lastName" type="text"&gt;
+	&lt;input name="firstName" type="text"&gt;
+&lt;/form&gt;</code></pre>
+
+			<h3 class="text-2xl text-center mb-4">Point the form to <a href="https://crucifor.me">crucifor.me</a>:</h3>
+			<pre class="w-full mb-8"><code class="html rounded">&lt;form
+	<strong>action="https://crucifor.me"
+	method="post"
+	enctype="multipart/form-data"</strong>&gt;
+
+	&lt;input name="lastName" type="text"&gt;
+	&lt;input name="firstName" type="text"&gt;
+&lt;/form&gt;</code></pre>
+			
+			<h3 class="text-2xl text-center mb-4">Set the email address where to send the answers:</h3>
+			<pre class="w-full mb-8"><code class="html rounded">&lt;form
+	action="https://crucifor.me"
+	method="post"
+	enctype="multipart/form-data"&gt;
+
+	&lt;input name="lastName" type="text"&gt;
+	&lt;input name="firstName" type="text"&gt;
+
+	<strong>&lt;input
+		name="cruciforme-mail"
+		value="your@awesome.mail"
+		type="hidden"&gt;</strong>
+&lt;/form&gt;</code></pre>
+
+			<h2 class="text-4xl text-center mb-8">That's it!</h2>
+
+			<h3 class="text-2xl text-center mb-4">You can redirect the user to a custom page:</h3>
+			<pre class="w-full mb-8"><code class="html rounded">&lt;input
+	name="<strong>cruciforme-success</strong>"
+	value="your.awesome.site/success"
+	type="hidden"&gt;
+&lt;input
+	name="<strong>cruciforme-error</strong>"
+	value="your.awesome.site/error"
+	type="hidden"&gt;</code></pre>
+
+			<h3 class="text-2xl text-center mb-4">Finally, you can customize the subject of the email:</h3>
+			<pre class="w-full mb-8"><code class="html rounded">&lt;input
+	name="<strong>cruciforme-subject</strong>"
+	value="Yay! An email!"
+	type="hidden"&gt;</code></pre>
 		</div>
 
 		<script src="index.js"></script>
