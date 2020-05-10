@@ -41,3 +41,4 @@ jobs:
           password: ${{ secrets.SSH_PASSWORD }}
           source: "dist/*"
           target: "/srv/http/crucifor.me"
+          stript_components: 1
