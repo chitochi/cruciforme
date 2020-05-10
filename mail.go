@@ -68,10 +68,14 @@ func (form *Form) sendByMail() error {
 		return err
 	}
 
+	if form.MailSubject == "" {
+		form.MailSubject = "Formulaire envoyé"
+	}
+
 	mail := &email.Email{
 		To:      []string{form.ToMailAddress},
 		From:    "Cruciforme <no-reply@koicactus.net>",
-		Subject: "Formulaire envoyé",
+		Subject: form.MailSubject,
 		Text:    []byte(textBody),
 		HTML:    []byte(htmlBody),
 		Headers: textproto.MIMEHeader{},

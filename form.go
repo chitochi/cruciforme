@@ -6,6 +6,7 @@ import (
 
 type Form struct {
 	ToMailAddress string
+	MailSubject   string
 	AfterSuccess  string
 	AfterError    string
 	Inputs        []*Input
