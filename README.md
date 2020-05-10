@@ -4,7 +4,7 @@ A form endpoint for static websites. Point any form to a cruciforme instance, an
 
 ## Usage
 
-Simply point you form to [https://crucifor.me] and add a hidden field named `cruciform-mail`:
+Simply point you form to https://crucifor.me and add a hidden field named `cruciform-mail`:
 
 ```html
 <form action="https://crucifor.me" method="post" enctype="multipart/form-data">
