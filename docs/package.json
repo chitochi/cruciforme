@@ -1,0 +1,21 @@
+{
+  "name": "cruciforme",
+  "version": "1.0.0",
+  "description": "Cruciforme docs",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Johyn Papin",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "tailwindcss": "^1.4.6"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "highlight.js": "^10.0.2",
+    "postcss-modules": "^2.0.0"
+  }
+}
