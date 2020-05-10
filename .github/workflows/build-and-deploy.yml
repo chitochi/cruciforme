@@ -41,6 +41,5 @@ jobs:
           ftp-password: ${{ secrets.FTP_PASSWORD }}
           known-hosts: ${{ secrets.FTP_KNOWN_HOST }}
           local-dir: dist
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          git-ftp-args: --insecure
 
