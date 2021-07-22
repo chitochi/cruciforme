@@ -7,9 +7,7 @@ require (
 	github.com/Masterminds/semver v1.5.0 // indirect
 	github.com/Masterminds/sprig v2.22.0+incompatible // indirect
 	github.com/PuerkitoBio/goquery v1.5.1 // indirect
-	github.com/aokoli/goutils v1.1.0 // indirect
-	github.com/gin-gonic/gin v1.6.2
-	github.com/gofiber/fiber v1.9.3
+	github.com/gofiber/fiber v1.12.6
 	github.com/gofiber/limiter v0.0.4
 	github.com/gofiber/logger v0.0.4
 	github.com/google/uuid v1.1.1 // indirect
@@ -23,6 +21,8 @@ require (
 	github.com/mitchellh/copystructure v1.0.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.1 // indirect
 	github.com/olekukonko/tablewriter v0.0.4 // indirect
+	github.com/stretchr/testify v1.4.0 // indirect
 	golang.org/x/crypto v0.0.0-20200429183012-4b2356b1ed79 // indirect
 	golang.org/x/net v0.0.0-20200501053045-e0ff5e5a1de5 // indirect
+	gopkg.in/yaml.v2 v2.2.8 // indirect
 )
